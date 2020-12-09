@@ -1,8 +1,3 @@
 dependencies {
 	implementation 'com.google.android.gms:play-services-base:' + '17.3.0'
 }
-
-if(android.defaultConfig.minSdkVersion.apiLevel < 16) {
-	logger.warning("Min SDK version is less than 16, setting it to 16")
-	android.defaultConfig.minSdkVersion 16
-}
