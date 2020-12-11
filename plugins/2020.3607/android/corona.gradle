@@ -1,3 +1,7 @@
 dependencies {
-	implementation 'com.google.android.gms:play-services-base:' + '17.3.0'
+    implementation 'com.google.android.gms:play-services-base:' + '17.3.0'
 }
+android.defaultConfig {
+    minSdkVersion Math.max(minSdkVersion?.apiLevel ?: 15, 16)
+}
+ext["minSdkVersion"] = Math.max(ext["minSdkVersion"], 16)
